@@ -1,0 +1,182 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Modern */
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    background-size: 300% 300%;
+    animation: gradientMove 10s infinite alternate;
+    color: white;
+    text-align: center;
+    display: flex;
+}
+
+/* Animasi Background */
+@keyframes gradientMove {
+    0% { background-position: left top; }
+    100% { background-position: right bottom; }
+}
+
+/* Sidebar Selalu Terlihat */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding-top: 20px;
+    box-shadow: 3px 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Sidebar Title */
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* List Menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efek Neon Glow */
+.sidebar ul li:hover {
+    background: rgba(255, 191, 0, 0.9);
+    box-shadow: 0 0 20px rgba(255, 191, 0, 1);
+    transform: scale(1.05);
+}
+
+/* Ikon Bergerak */
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar ul li:hover a {
+    color: black;
+    transform: translateX(5px);
+}
+
+/* Efek Klik Gelombang */
+.sidebar ul li:active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 0.4s ease-out;
+}
+
+@keyframes ripple {
+    0% { transform: scale(0); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
+}
+
+/* Konten */
+header, .about {
+    margin-left: 270px;
+    padding: 20px;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Tentang Kami */
+.about {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Background CyberCity */
+body {
+    background: linear-gradient(to bottom, #0a0a23, #141439, #1b1b4d);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Efek Kabut Futuristik */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 10%, rgba(0, 0, 0, 0.9) 80%);
+    top: 0;
+    left: 0;
+}
+
+/* Siluet Kota Cyber */
+.city {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: url('https://i.imgur.com/4Y7E2DM.png') repeat-x;
+    animation: moveCity 20s linear infinite;
+}
+
+/* Animasi Bergerak Kota */
+@keyframes moveCity {
+    0% { background-position: 0px 0; }
+    100% { background-position: -1000px 0; }
+}
+
+/* Lampu Neon Berkedip */
+.neon-lights {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #ff00ff;
+    animation: blinkNeon 1s infinite alternate;
+}
+
+/* Animasi Lampu Berkedip */
+@keyframes blinkNeon {
+    0% { opacity: 1; text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff; }
+    100% { opacity: 0.8; text-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff; }
+}
