@@ -51,10 +51,10 @@ toggleButton.addEventListener("click", () => {
     // Simpan preferensi pengguna
     localStorage.setItem("theme", mode);
 });
-// Fungsi untuk membuka pop-up
-function openPopup() {
+// Fungsi untuk membuka pop-up otomatis
+window.onload = function() {
     document.getElementById("popupModal").style.display = "block";
-}
+};
 
 // Fungsi untuk menutup pop-up
 function closePopup() {
