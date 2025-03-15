@@ -32,12 +32,23 @@ function playClickSound() {
     let clickSound = new Audio("click.mp3");
     clickSound.play();
 }
-
 // Mode Gelap/Terang
 const toggleButton = document.getElementById("theme-toggle");
 const body = document.body;
 
+// Cek jika user sebelumnya memilih mode terang
+if (localStorage.getItem("theme") === "light") {
+    body.classList.add("light-mode");
+    toggleButton.textContent = "☀️ Mode Terang";
+}
+
+// Event untuk mengganti mode
 toggleButton.addEventListener("click", () => {
     body.classList.toggle("light-mode");
-    toggleButton.textContent = body.classList.contains("light-mode") ? "☀️ Mode Terang" : "🌙 Mode Gelap";
+    const mode = body.classList.contains("light-mode") ? "light" : "dark";
+    toggleButton.textContent = mode === "light" ? "☀️ Mode Terang" : "🌙 Mode Gelap";
+    
+    // Simpan preferensi pengguna
+    localStorage.setItem("theme", mode);
 });
+                                         
