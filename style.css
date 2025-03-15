@@ -305,3 +305,38 @@ body {
 body {
     transition: background 0.3s, color 0.3s;
     }
+/* Style untuk pop-up */
+.popup {
+    display: none; /* Default tersembunyi */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Kotak Pop-up */
+.popup-content {
+    background-color: #222;
+    color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Tombol Close */
+.close-btn {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close-btn:hover {
+    color: red;
+}
