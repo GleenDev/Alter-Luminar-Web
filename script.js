@@ -1,4 +1,4 @@
-document.getElementById("toggleSidebar").addEventListener("click", function () {
-    let sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("active");
-});
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
