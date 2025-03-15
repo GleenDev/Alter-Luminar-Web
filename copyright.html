@@ -18,8 +18,21 @@
             <p>© Sann® 2025. Semua hak dilindungi. Konten di situs ini hanya boleh digunakan untuk keperluan pribadi dan non-komersial. Dilarang menyalin, memodifikasi, atau mendistribusikan tanpa izin tertulis dari pemilik situs.</p>
             <a href="Sann.html" class="btn">Kembali ke Menu</a>
         </div>
-    </section>
+        </section>
+    
+    <!-- Tombol untuk membuka pop-up -->
+    <button class="btn" onclick="openPopup()">Buka Pop-up</button>
 
+    <!-- Pop-up Modal -->
+    <div id="popupModal" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Halo, Selamat Datang!</h2>
+            <p>Ini adalah pop-up modal sederhana. Anda bisa menambahkan teks atau tombol di dalamnya.</p>
+            <button class="btn" onclick="closePopup()">Tutup</button>
+        </div>
+    </div>
+    
     <!-- Footer -->
     <footer>
         <p>&copy; Sann® 2025. Semua Hak Dilindungi.</p>
