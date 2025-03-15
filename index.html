@@ -3,37 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum Alter Luminar</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Website Modern</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Sidebar Menu -->
-    <div class="sidebar">
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="#">🏠 Home</a></li>
-            <li><a href="content-creators.html">🎥 Content Creators</a></li>
-            <li><a href="support.html">💬 Support</a></li>
-            <li><a href="girls.html">🌸 Girls</a></li>
-            <li><a href="calon-warga.html">👋 Calon Warga</a></li>
-            <li><a href="general.html">🗣️ General</a></li>
-            <li><a href="#about">ℹ️ Tentang Kami</a></li>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">ModernWeb</div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#features">Fitur</a></li>
+            <li><a href="#contact">Kontak</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <!-- Header -->
-    <header>
-        <h1>ALTER LUMINAR | GO 1K MEMBER</h1>
-        <p>Forum eksklusif untuk berbagi konten, dukungan komunitas, dan diskusi menarik.</p>
+    <!-- Hero Section -->
+    <header id="home">
+        <h1>Selamat Datang</h1>
+        <p>Website Modern dengan Desain Elegan</p>
+        <a href="#features" class="btn">Jelajahi</a>
     </header>
 
-    <!-- Tentang Kami -->
-    <section id="about" class="about">
-        <h2>Tentang Forum Alter Luminar</h2>
-        <p>Alter Luminar adalah komunitas yang dibangun untuk para kreator, gamers, dan diskusi berbasis hobi. 
-           Kami menyediakan tempat aman untuk berbagi informasi, berdiskusi, dan mendapatkan dukungan dari sesama anggota.</p>
+    <!-- About Section -->
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami menyediakan desain web yang responsif, modern, dan user-friendly.</p>
     </section>
 
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Fitur</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <h3>Desain Responsif</h3>
+                <p>Website yang bisa diakses di berbagai perangkat.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Efek Animasi</h3>
+                <p>Transisi yang halus untuk pengalaman pengguna lebih baik.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Mode Gelap</h3>
+                <p>Warna hitam dan abu-abu untuk tampilan elegan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2025 ModernWeb. Semua Hak Dilindungi.</p>
+    </footer>
 </body>
 </html>
